@@ -6,9 +6,10 @@ import librosa.display
 import os
 import csv
 
-
-folder_str ="/Users/fyy0194/Documents/cse237D/grabador2019_1/output/trimed"
-tar_str = "/Users/fyy0194/Documents/cse237D/grabador2019_1/output/specs"
+folder_str = sys.argv[1]
+tar_str = sys.argv[2]
+#folder_str ="/Users/fyy0194/Documents/cse237D/grabador2019_1/output/trimed"
+#tar_str = "/Users/fyy0194/Documents/cse237D/grabador2019_1/output/specs"
 with open(tar_str+'/labels.csv','w', newline='') as csvfile:
     fieldnames = ['file', 'label']
     writer = csv.DictWriter(csvfile,fieldnames = fieldnames)
