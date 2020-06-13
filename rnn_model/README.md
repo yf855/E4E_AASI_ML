@@ -1,3 +1,9 @@
+# Fine tuning and changes
+
+The implementation is in ```learn_model.ipynb```. 
+
+The major changes occur when the ```finetuning``` flag is true, where the original model weight is loaded and be trained on newly labeled datasets. 
+
 # Recural Neural Network model for temporal detection
 orignal readme from the microfaune repo.  
 
@@ -43,8 +49,6 @@ The first tests were run by combining the *freefield* and the *warblr* datasets 
 ### Performances
 
 The model has a global accuracy of 90.18% and an AUC of 0.955. 
-
-![Precision/Recall curve](imgs/PR_curve.png)
 
 
 This suggests that the recall could be over 95% while keeping a precision of 83.5%.
