@@ -7,11 +7,11 @@ import tensorflow as tf
 
 from .audio import load_wav, create_spec
 
-RNN_WEIGHTS_FILE = os.path.abspath(os.path.join(os.path.dirname(__file__),"data/model_weights-20190919_220113.h5"))
-#RNN_WEIGHTS_FILE = os.path.abspath(
-#os.path.join(os.path.dirname(__file__),
-#             "data/model_weights-20200528_093824.h5"))
-
+#RNN_WEIGHTS_FILE = os.path.abspath(os.path.join(os.path.dirname(__file__),"data/model_weights-20190919_220113.h5"))
+RNN_WEIGHTS_FILE = os.path.abspath(
+os.path.join(os.path.dirname(__file__),
+             "data/model_weights-20200528_093824.h5"))
+#load chosen weight from data
 
 class RNNDetector:
     """Class wrapping a rnn model
