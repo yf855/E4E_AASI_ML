@@ -56,14 +56,14 @@ make html
 
 file: bird_detection.py
 
-usage: py bird_detection.py -D [audiopath] for sample rate over 44100kHz file; -L [path] for 44100kHz files
+usage: ```python bird_detection.py -D [audiopath]``` for sample rate over 44100kHz file. ```python bird_detection.py -L [audiopath]``` for 44100kHz files
 
 function: output 10 sec clips and mark the ones detected with bird vocalisation
 
 
 file: detect_acc.py
 
-usage: py detect_acc.py [folder path to audio files] 
+usage: ```python detect_acc.py [folder path to audio files]```
 
 function: output prediction accuracy on labeled data. Must have labels.csv in folder path. 
 
